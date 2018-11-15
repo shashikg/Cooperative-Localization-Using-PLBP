@@ -1,6 +1,6 @@
-function [ui, Wi] = doBP_Marginal(A, b, sigma, u, W, k, E, z, R)
+function [ui, Wi] = doBP(A, b, sigma, u, W, k, E, z, R)
   for p=1:113
-    if (E(p,k)&&(p!=k))
+    if (E(p,k)&&(p~=k))
       
       alpha = z(p,k) - A(:,1:2,p,k)*(transpose(u(p,:))) - b(p,k);
       H = A(:,3:4,p,k);

@@ -1,5 +1,5 @@
 %% Main PLBP Algorithm -------------------------------------------------
-%% Node (1 to 100 - Normal Nodes) and (101 to 113 - Anchor Nodes) ------
+% Node (1 to 100 - Normal Nodes) and (101 to 113 - Anchor Nodes) ------
 
 clear;
 

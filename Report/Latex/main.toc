@@ -1,0 +1,8 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}AIM/OBJECTIVE}{2}
+\contentsline {section}{\numberline {2}PROBLEM DEFINITION}{2}
+\contentsline {section}{\numberline {3}SYSTEM MODEL/METHODOLOGY}{2}
+\contentsline {subsection}{\numberline {3.1}Algorithm flow}{4}
+\contentsline {section}{\numberline {4}Matlab simulations}{4}
+\contentsline {section}{\numberline {5}Results and conclusions}{5}
+\contentsline {section}{\numberline {6}References}{7}

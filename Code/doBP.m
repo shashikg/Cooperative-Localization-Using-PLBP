@@ -1,15 +1,15 @@
 %% Function to run belief propagation on a node 'k'
-%% Inputs: A, b, sigma - Linearisation parameters obtained from SLR
-           u, W - Old mean and variance of node 'k'
-           E - matrix containing info about the edges which can communicate
-           z - message(distance) matrix between two nodes
-           R - Variation of measured message 'z'
-%% Outputs: ui, Wi - updated mean and variance for node 'k'
-%%---------------------------------------------------------------------------
+% Inputs: A, b, sigma - Linearisation parameters obtained from SLR
+%           u, W - Old mean and variance of node 'k'
+%           E - matrix containing info about the edges which can communicate
+%           z - message(distance) matrix between two nodes
+%           R - Variation of measured message 'z'
+% Outputs: ui, Wi - updated mean and variance for node 'k'
+%---------------------------------------------------------------------------
 
 function [ui, Wi] = doBP(A, b, sigma, u, W, k, E, z, R)
 
-  % Kalman update for all neighbouring nodes. 
+  % Kalman update for all neighbouring nodes.
   for p=1:113
     if (E(p,k)&&(p~=k))
 

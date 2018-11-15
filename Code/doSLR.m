@@ -1,6 +1,6 @@
 %% SLR based on Sigma Points
-%% Inputs: ul, Wl - mean and Covariance matrix for two nodes which is to be linearised
-%% Outputs: A, b, sigma - Linearisation Parameters. A = [A1 A2]
+% Inputs: ul, Wl - mean and Covariance matrix for two nodes which is to be linearised
+% Outputs: A, b, sigma - Linearisation Parameters. A = [A1 A2]
 
 function [A, b, sigma] = doSLR(ul, Wl)
   N = 4;

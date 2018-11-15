@@ -1,6 +1,6 @@
 %% To plot the graphs with all nodes and vertices --------
-%% Inputs: V - Nodes/ Vertex
-           E - edges
+% Inputs: V - Nodes/ Vertex
+%           E - edges
 
 function plotGraph(V, E)
   for i = 1:113

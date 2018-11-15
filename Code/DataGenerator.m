@@ -13,9 +13,13 @@ x_observed(1:100,:) = x_actual(1:100,:) + 10.0.*randn(100, 2);
 x_observed(101:113,:) = x_actual(101:113,:) + 0.1.*randn(13, 2);
 
 h_actual = zeros(113,113);
+E = zeros(113,113);
 for i = 1:113
   for j = 1:113
     h_actual(i,j) = norm(x_actual(i,:) - x_actual(j,:));
+    if h_actual(i,j) <= 20.0
+      E(i,j) = 1;
+    end
   end
 end
 
